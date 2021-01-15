@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Projekt XIV (50 pkt)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Napisz aplikację, która będzie serwisem zbierającym bazę filmów. Aplikacja powinna korzystać z API serwisu https://www.themoviedb.org (dostęp do dokumentacji API pod adresem https://www.themoviedb.org/documentation/api).
 
-## Available Scripts
+### Aplikacja powinna spełniać następujące wymagania:
 
-In the project directory, you can run:
+   - [ ] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić panel do wyszukania filmów
+   - [ ] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić najbardziej popularne filmy w serwisie https://www.themoviedb.org
+   - [ ] (1 pkt) Podczas wpisania do panelu nazwy filmów, powinno wyświetlić nazwy filmów pobranych z serwisu https://www.themoviedb.org
+   - [ ] (13 pkt) Każdy z pobranych filmów przez wyszukiwania powinien zawierać:
+   - [ ] (0.5 pkt) Tytuł filmu
+   - [ ] (1 pkt) Zdjęcie/plakat filmu
+   - [ ] (1 pkt) Opis filmu
+   - [ ] (0.5 pkt) Data premiery
+   - [ ] (1 pkt) Wymieniony gatunek filmów
+   - [ ] (0.5 pkt) Wymienienie reżysera
+   - [ ] (1 pkt) Wyświetlenie głównych aktorów
+   - [ ] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
+   - [ ] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
+   - [ ] (2 pkt) Możliwość obejrzenia galerii scen z tego filmu
+   - [ ] (4 pkt) Możliwość obejrzenia zwiastunu tego filmu
+   - [ ] (2 pkt) Aplikacja powinna zawierać panel w którym będziemy wyszukiwać filmy nie tylko po słowie kluczowym, ale również po gatunku
+   - [ ] (2 pkt) Wyszukane filmy powinny być wyświetlane z możliwością sortowania pól na przykład po roku wydania filmu
+   - [ ] (2 pkt) Aplikacja powinna pozwalać na wystawienie oceny danemu filmowi. Wówczas ocena ta powinna zostać przekazana do serwisu https://www.themoviedb.org
+   - [ ] (1 pkt) Oprócz wyszukiwania filmów z serwisu https://www.themoviedb.org aplikacja powinna zawierać panel, w którym sam można dodać film o podanych wyżej parametrach (bez galerii oraz odnośniku do serwisu https://www.themoviedb.org
+   - [ ] (2 pkt) W dodanych przez siebie filmach, aplikacja powinna mieć możliwość dodania komentarzy (poza serwisem https://www.themoviedb.org). Komentarze te powinny być wyświetlone w szczegółach dodanego filmu
+   - [ ] (2 pkt) W dodanych przez siebie filmach, aplikacja powinna mieć możliwość dodania oceny (poza serwisem https://www.themoviedb.org). Ocena ta powinny być widoczna w szczegółach dodanego filmu
+   - [ ] (4 pkt) Aplikacja powinna zawierać panel administratora, dzięki któremu możemy dodawać/edytować/usuwać filmy oraz komentarze
+   - [ ] (2 pkt) Aplikacja powinna wyświetlać statystyki dla danych filmów (w postaci tabeli na przykład najbardziej popularne, najbardziej popularny aktor). Im więcej statystyk tym większa liczba punktów
+### Pod ocenę będą brane następujące elementy:
 
-### `npm start`
+  - [ ] (1 pkt) Skompilowanie oraz uruchomienie projektu
+  - [ ] (33 pkt) Uwzględnienie powyższych wymagań z uwzględnieniem sytuacji wyjątkowych
+  - [ ] (12 pkt) Styl aplikacji pod względem CSS 
+  - [ ] (1 pkt) Użycie frameworka CSS np. Bootstrap
+  - [ ] (3 pkt) Personalizacja stylu CSS za pomocą Less/SaaS
+  - [ ] (5 pkt) Funkcjonalne ułożenie elementów aplikacji
+  - [ ] (1 pkt) Użycie React Rounting
+  - [ ] (1 pkt) Użycie React Redux
+  - [ ] (1 pkt) Użycie TypeScript
+  - [ ] (2 pkt) Przetestowanie aplikacji
+  - [ ] (2 pkt) Styl i podział kodu
+ 
+### Dodatkowe punkty można otrzymać za wykonanie następujących podpunktów:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  -[ ] (1 pkt) Logowanie administratora
+  -[ ] (1 pkt) Internationalizacja aplikacji
+  -[ ] (1 pkt) Deploy aplikacji na serwer zewnętrzny (na przykład w serwisie Heroku/Netlify).
+  -[ ] (2 pkt) Inne rzeczy, nie pokazane na wykładzie/zajęciach.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Ponadto pod ocenę jest brane również: (Brak tych elementów to ujemne punkty od obowiązkowej punktacji zadania!)
 
-### `npm test`
+   - [ ] (0 pkt)Historia projektu w repozytorium.
+   - [ ] (0 pkt)Ocenaopisu commitów
+   - [ ] (0 pkt)Stan repozytorium (żeby nie był śmietnikiem!!!)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# API 
+   - https://www.themoviedb.org/
+   - https://www.themoviedb.org/documentation/api
