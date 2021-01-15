@@ -1,0 +1,21 @@
+.search-film-bar {
+  height: 45vh;
+}
+
+.search-film-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-film-input {
+  width: 80vw;
+  height: 8vh;
+  min-height: 30px;
+
+  &.search-film-input-justification {
+    text-indent: 2%;
+  }
+}
