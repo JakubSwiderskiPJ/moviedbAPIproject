@@ -1,0 +1,14 @@
+@import '../../../../style/style.scss';
+
+.films-not-found-header {
+  color: $accent-color;
+  font-size: 1.4rem;
+}
+
+.films-not-found-main {
+  span {
+    color: $supplement-light-color;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
