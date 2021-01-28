@@ -11,6 +11,8 @@ export default function SearchBar() {
     // us custom
     const foundFilms = useGet(searchByTitle(input));
 
+    const [searchCategoryVisibility, setSearchCategoryVisibility] = useState(false);
+
     return (
         <article className="search-film-article search-film-article-bg-img">
             <form className="search-film-form search-film-form-size">
@@ -23,7 +25,12 @@ export default function SearchBar() {
                            className="search-film-input search-film-input-size
                                       search-film-input-border search-film-font"
                            placeholder="Search Films..."
-                           onChange={event => setInput(event.target.value)}/>
+                           onChange={event => setInput(event.target.value)}>
+                    </input>
+                    <div className='categories' onClick={() => setSearchCategoryVisibility(!searchCategoryVisibility)}>Y</div>
+                    <div className="categories-list" style={{opacity: `${searchCategoryVisibility ? 1 : 0}`}}>
+                        <p>release date</p>
+                    </div>
                     <FoundFilmsList
                         input={input}
                         foundFilms={foundFilms}/>

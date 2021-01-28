@@ -71,3 +71,22 @@
   border: 1px solid $supplement-light-color;
   border-radius: 25px;
 }
+
+.categories {
+  position: absolute;
+  left: 96%;
+  top: 2.2%;
+}
+
+.categories-list {
+  position: absolute;
+  left: 80%;
+  top: 12%;
+  width: 20%;
+  height: 15%;
+  background: $main-color;
+
+  p {
+    padding: 0;
+  }
+}

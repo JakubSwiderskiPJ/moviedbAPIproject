@@ -4,23 +4,23 @@
 
 ### Aplikacja powinna spełniać następujące wymagania:
 
-   - [ ] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić panel do wyszukania filmów
-   - [ ] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić najbardziej popularne filmy w serwisie https://www.themoviedb.org
-   - [ ] (1 pkt) Podczas wpisania do panelu nazwy filmów, powinno wyświetlić nazwy filmów pobranych z serwisu https://www.themoviedb.org
+   - [x] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić panel do wyszukania filmów
+   - [x] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić najbardziej popularne filmy w serwisie https://www.themoviedb.org
+   - [x] (1 pkt) Podczas wpisania do panelu nazwy filmów, powinno wyświetlić nazwy filmów pobranych z serwisu https://www.themoviedb.org
    - [ ] (13 pkt) Każdy z pobranych filmów przez wyszukiwania powinien zawierać:
-   - [ ] (0.5 pkt) Tytuł filmu
-   - [ ] (1 pkt) Zdjęcie/plakat filmu
-   - [ ] (1 pkt) Opis filmu
-   - [ ] (0.5 pkt) Data premiery
-   - [ ] (1 pkt) Wymieniony gatunek filmów
-   - [ ] (0.5 pkt) Wymienienie reżysera
-   - [ ] (1 pkt) Wyświetlenie głównych aktorów
-   - [ ] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
-   - [ ] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
-   - [ ] (2 pkt) Możliwość obejrzenia galerii scen z tego filmu
-   - [ ] (4 pkt) Możliwość obejrzenia zwiastunu tego filmu
+        - [x] (0.5 pkt) Tytuł filmu
+        - [x] (1 pkt) Zdjęcie/plakat filmu
+        - [x] (1 pkt) Opis filmu
+        - [x] (0.5 pkt) Data premiery
+        - [ ] (1 pkt) Wymieniony gatunek filmów
+        - [ ] (0.5 pkt) Wymienienie reżysera
+        - [ ] (1 pkt) Wyświetlenie głównych aktorów
+        - [ ] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
+        - [ ] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
+        - [ ] (2 pkt) Możliwość obejrzenia galerii scen z tego filmu
+        - [ ] (4 pkt) Możliwość obejrzenia zwiastunu tego filmu
    - [ ] (2 pkt) Aplikacja powinna zawierać panel w którym będziemy wyszukiwać filmy nie tylko po słowie kluczowym, ale również po gatunku
-   - [ ] (2 pkt) Wyszukane filmy powinny być wyświetlane z możliwością sortowania pól na przykład po roku wydania filmu
+   - [ ] ### (2 pkt) Wyszukane filmy powinny być wyświetlane z możliwością sortowania pól na przykład po roku wydania filmu
    - [ ] (2 pkt) Aplikacja powinna pozwalać na wystawienie oceny danemu filmowi. Wówczas ocena ta powinna zostać przekazana do serwisu https://www.themoviedb.org
    - [ ] (1 pkt) Oprócz wyszukiwania filmów z serwisu https://www.themoviedb.org aplikacja powinna zawierać panel, w którym sam można dodać film o podanych wyżej parametrach (bez galerii oraz odnośniku do serwisu https://www.themoviedb.org
    - [ ] (2 pkt) W dodanych przez siebie filmach, aplikacja powinna mieć możliwość dodania komentarzy (poza serwisem https://www.themoviedb.org). Komentarze te powinny być wyświetlone w szczegółach dodanego filmu
