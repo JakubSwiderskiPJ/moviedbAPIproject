@@ -15,27 +15,29 @@ export default function SearchBar() {
 
     return (
         <article className="search-film-article search-film-article-bg-img">
-            <form className="search-film-form search-film-form-size">
-                <label htmlFor="search-film-bar"
-                       className='search-film-area search-film-area-size
-                                  search-film-area-position'>
-                    {/* onChange event - if u put something to input the state 'll change */}
+            <div className='form-sizer'>
+                <form className="search-film-form search-film-form-size">
+                    <label htmlFor="search-film-bar" />
                     <input id="search-film-bar"
                            type="text"
                            className="search-film-input search-film-input-size
                                       search-film-input-border search-film-font"
                            placeholder="Search Films..."
-                           onChange={event => setInput(event.target.value)}>
-                    </input>
-                    <div className='categories' onClick={() => setSearchCategoryVisibility(!searchCategoryVisibility)}>Y</div>
-                    <div className="categories-list" style={{opacity: `${searchCategoryVisibility ? 1 : 0}`}}>
-                        <p>release date</p>
-                    </div>
-                    <FoundFilmsList
-                        input={input}
-                        foundFilms={foundFilms}/>
-                </label>
-            </form>
+                           onChange={event => setInput(event.target.value)} />
+                </form>
+                <div className='filter-categories filter-categories-border filter-categories-position
+                                    filter-categories-size' onClick={() => setSearchCategoryVisibility(!searchCategoryVisibility)}>Filters</div>
+            </div>
+    <div className='search-film-area search-film-area-size
+                                  search-film-area-position'>
+        <ul className="filter-categories-list filter-categories-list-position" style={{opacity: `${searchCategoryVisibility ? 1 : 0}`}}>
+            <li>Release Date</li>
+            <li>Genre</li>
+        </ul>
+        <FoundFilmsList
+            input={input}
+            foundFilms={foundFilms}/>
+    </div>
         </article>
     );
 }

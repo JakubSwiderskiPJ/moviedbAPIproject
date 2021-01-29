@@ -37,6 +37,33 @@
     border: 1px solid $supplement-light-color;
     border-radius: 10px;
   }
+}
+
+.film-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.content-overview {
+  p {
+    font-size: .8rem;
+  }
+}
+
+.content-votes {
+  display: flex;
+  flex-direction: column;
 
 }
 
+.vote-count-size {
+  font-size: .8rem;
+  color: #888787;
+}

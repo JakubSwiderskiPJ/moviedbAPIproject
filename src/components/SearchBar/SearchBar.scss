@@ -4,6 +4,10 @@
   height: 60vh;
   background: $supplement-dark-color;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &.search-film-article-bg-img {
     background-image: url('../../svg/search-bar-logo.svg');
     background-size: contain;
@@ -11,14 +15,41 @@
   }
 }
 
-.search-film-form {
+.form-sizer {
+  width: 80%;
+  height: 10%;
+
   display: flex;
-  flex-direction: column;
+/*  border-radius: 25px;
+  background: $main-color;*/
+}
+
+/*
+.search-film {
+  background: $main-color;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 
+  width: 80%;
+  height: 10%;
+
+  border-right: 1px solid $accent-color;
+  border-left: 1px solid $supplement-light-color;
+  border-bottom: 1px solid $supplement-light-color;
+  border-top: 1px solid $accent-color;
+  border-radius: 25px;
+}*/
+
+.search-film-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background: $main-color;
+
   &.search-film-form-size {
-    width: 100%;
+    width: 80%;
     height: 100%;
   }
 }
@@ -41,17 +72,19 @@
 
 .search-film-input {
   padding: 2%;
+  background: $main-color;
 
   &.search-film-input-size {
     width: 100%;
-    height: 10%;
+    height: 100%;
   }
 
   &.search-film-input-border {
-    border-right: 1px solid $accent-color;
-    border-left: 1px solid $supplement-light-color;
-    border-bottom: 1px solid $supplement-light-color;
-    border-top: 1px solid $accent-color;
+    //border-right: 1px solid $accent-color;
+    //border-left: 1px solid $supplement-light-color;
+    //border-bottom: 1px solid $supplement-light-color;
+    //border-top: 1px solid $accent-color;
+    border: none;
     border-radius: 25px;
   }
 
@@ -72,21 +105,39 @@
   border-radius: 25px;
 }
 
-.categories {
-  position: absolute;
-  left: 96%;
-  top: 2.2%;
+.filter-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $supplement-light-color;
+  color: $main-color;
+
+  &.filter-categories-border {
+    border: none;
+    border-radius: 25px;
+  }
+
+/*  &.filter-categories-position {
+    position: absolute;
+    left: 92.3%;
+    top: 6.9%;
+  }*/
+
+  &.filter-categories-size {
+    width: 7.8%;
+    height: 100%;
+  }
 }
 
-.categories-list {
-  position: absolute;
-  left: 80%;
-  top: 12%;
+.filter-categories-list {
+  margin: 0;
   width: 20%;
-  height: 15%;
   background: $main-color;
+  border-radius: 20px;
 
-  p {
-    padding: 0;
+  &.filter-categories-list-position {
+    position: absolute;
+    left: 80%;
+    top: 14.5%;
   }
 }

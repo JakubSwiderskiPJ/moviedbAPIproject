@@ -16,7 +16,7 @@
         - [ ] (0.5 pkt) Wymienienie reżysera
         - [ ] (1 pkt) Wyświetlenie głównych aktorów
         - [ ] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
-        - [ ] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
+        - [x] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
         - [ ] (2 pkt) Możliwość obejrzenia galerii scen z tego filmu
         - [ ] (4 pkt) Możliwość obejrzenia zwiastunu tego filmu
    - [ ] (2 pkt) Aplikacja powinna zawierać panel w którym będziemy wyszukiwać filmy nie tylko po słowie kluczowym, ale również po gatunku
@@ -29,11 +29,11 @@
    - [ ] (2 pkt) Aplikacja powinna wyświetlać statystyki dla danych filmów (w postaci tabeli na przykład najbardziej popularne, najbardziej popularny aktor). Im więcej statystyk tym większa liczba punktów
 ### Pod ocenę będą brane następujące elementy:
 
-  - [ ] (1 pkt) Skompilowanie oraz uruchomienie projektu
+  - [x] (1 pkt) Skompilowanie oraz uruchomienie projektu
   - [ ] (33 pkt) Uwzględnienie powyższych wymagań z uwzględnieniem sytuacji wyjątkowych
   - [ ] (12 pkt) Styl aplikacji pod względem CSS 
   - [ ] (1 pkt) Użycie frameworka CSS np. Bootstrap
-  - [ ] (3 pkt) Personalizacja stylu CSS za pomocą Less/SaaS
+  - [x] (3 pkt) Personalizacja stylu CSS za pomocą Less/SaaS
   - [ ] (5 pkt) Funkcjonalne ułożenie elementów aplikacji
   - [ ] (1 pkt) Użycie React Rounting
   - [ ] (1 pkt) Użycie React Redux
