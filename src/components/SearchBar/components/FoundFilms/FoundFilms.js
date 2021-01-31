@@ -1,21 +1,21 @@
 import React from 'react';
+import ReactPlayer from "react-player";
 import './FoundFilms.scss';
 import { genreURL, toPage } from '../../../../API/API.envy';
 
 import useGet from '../../../../hooks/useGet';
 import useDirectorName from '../../../../hooks/useDirectorName';
 import useTopActors from '../../../../hooks/useTopActors';
+import Gallery from "../../../Gallery/Gallery";
+import useVideo from "../../../../hooks/useVideo";
 
 
 export default function FoundFilm({ film }) {
     const genres = useGet(genreURL(film.id), [], `genres`);
     const actors = useTopActors(film.id);
     const directorName = useDirectorName(film.id);
+    const youtubeURL = useVideo(film.id);
 
-    // Gallery work area
-
-    /*const galery = useGet();
-    const galleryURL = `https://api.themoviedb.org/3/movie/${film.id}/images?api_key=f3ee5d85c3a33b8437e40136ab986b03`;*/
 
     return (
         <li className='film-card film-card-size film-card-border'>
@@ -35,9 +35,9 @@ export default function FoundFilm({ film }) {
                     <p>{(film.vote_average === 0) ? `Unvoted` : `Vote: ${film.vote_average}`}</p>
                     <span>{(film.vote_count === 1) ? `${film.vote_count} vote` : `${film.vote_count} votes`}</span>
                 </footer>
-            </div>
 
-            <div className='gallery'>
+                <Gallery filmId={film.id} />
+                <ReactPlayer url={youtubeURL} />
 
             </div>
         </li>
