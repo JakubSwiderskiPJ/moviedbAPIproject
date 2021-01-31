@@ -12,10 +12,10 @@
         - [x] (1 pkt) Zdjęcie/plakat filmu
         - [x] (1 pkt) Opis filmu
         - [x] (0.5 pkt) Data premiery
-        - [ ] (1 pkt) Wymieniony gatunek filmów
-        - [ ] (0.5 pkt) Wymienienie reżysera
-        - [ ] (1 pkt) Wyświetlenie głównych aktorów
-        - [ ] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
+        - [x] (1 pkt) Wymieniony gatunek filmów
+        - [x] (0.5 pkt) Wymienienie reżysera
+        - [x] (1 pkt) Wyświetlenie głównych aktorów
+        - [x] (0.5 pkt) Odnośnik do strony w serwisie https://www.themoviedb.org
         - [x] (1 pkt) Średnia ocen z tego filmu (z ilością oddanych głosów)
         - [ ] (2 pkt) Możliwość obejrzenia galerii scen z tego filmu
         - [ ] (4 pkt) Możliwość obejrzenia zwiastunu tego filmu

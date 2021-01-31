@@ -1,46 +1,45 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React from 'react';
 import './FoundFilms.scss';
-import {filmData, movieURL, posterURL} from "../../../../API/API.envy";
-import axios from "axios";
+import { genreURL, toPage } from '../../../../API/API.envy';
 
-export default function FoundFilms({film}) {
+import useGet from '../../../../hooks/useGet';
+import useDirectorName from '../../../../hooks/useDirectorName';
+import useTopActors from '../../../../hooks/useTopActors';
 
-    const [fetchFilmData, setFetchFilmData] = useState({});
 
-    // useCallback - always recall if data changes
-    const getDataFromAPI = useCallback(() => {
-        // axios get call
-        axios.get(movieURL)
-            .then(response => {
-                // save data to us state
-                // console.log(response)
-                setFetchFilmData(response)
-            })
-            .catch(error => console.error(`Error: ${error}`))
-    }, [movieURL])
+export default function FoundFilm({ film }) {
+    const genres = useGet(genreURL(film.id), [], `genres`);
+    const actors = useTopActors(film.id);
+    const directorName = useDirectorName(film.id);
 
-    // render result after state changes
-    useEffect(() => {
-        getDataFromAPI()
-    }, [getDataFromAPI])
+    // Gallery work area
+
+    /*const galery = useGet();
+    const galleryURL = `https://api.themoviedb.org/3/movie/${film.id}/images?api_key=f3ee5d85c3a33b8437e40136ab986b03`;*/
 
     return (
         <li className='film-card film-card-size film-card-border'>
-            <div className="poster poster-border poster-size"
-                 style={{backgroundImage: `url(${posterURL(film.poster_path)})`}}/>
-            <article  className="film-content">
-                <header className='content-header'>
-                    <h1>{film.title}</h1>
+            <aside className='poster' style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${film.poster_path})`}} />
+            <div className="film-content">
+                <header className='film-title'>
+                    <a rel="noreferrer" href={toPage(film.id, film.title)} target="_blank"><h1>{film.title}</h1></a>
                     <span>{film.release_date}</span>
+                    <p>{genres.map(g => g.name).join(', ')}</p>
                 </header>
-                <main className='content-overview'>
-                    <p>{film.overview}</p>
+                <main className='film-overview'>
+                    <p>Overview: {film.overview}</p>
+                    <p>Cast: {actors.join(', ')}</p>
+                    <p>Director: {directorName}</p>
                 </main>
-                <footer className='content-votes'>
-                    <span>{(film.vote_average === 0) ? `Unvoted` : `Vote: ${film.vote_average}`}</span>
-                    <span className='vote-count-size'> {film.vote_count} users votes</span>
+                <footer className='film-votes'>
+                    <p>{(film.vote_average === 0) ? `Unvoted` : `Vote: ${film.vote_average}`}</p>
+                    <span>{(film.vote_count === 1) ? `${film.vote_count} vote` : `${film.vote_count} votes`}</span>
                 </footer>
-            </article>
+            </div>
+
+            <div className='gallery'>
+
+            </div>
         </li>
     );
 }

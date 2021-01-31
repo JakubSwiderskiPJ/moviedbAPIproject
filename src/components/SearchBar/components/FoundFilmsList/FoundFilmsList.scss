@@ -1,16 +1,6 @@
 @import '../../../../style/style.scss';
 
+
 .found-film-list {
-  margin: 0;
   background: $main-color;
-  overflow-y: scroll;
-
-  &.found-film-list-size {
-    height: 45vh;
-  }
-
-  &.found-film-list-border {
-    border: 1px solid $supplement-light-color;
-    border-radius: 25px;
-  }
 }
