@@ -27,9 +27,11 @@ function App() {
                     setInput={setInput}
                     searchType={searchType}
                     setSearchType={setSearchType} />
-
+{/*
                 {searchType && <FilmView input={input} foundFilms={foundFilms}/>}
-                {!searchType && <FilmView input={input} foundFilms={foundGenres}/>}
+                {!searchType && <FilmView input={input} foundFilms={foundGenres}/>}*/}
+
+                <FilmView input={input} foundFilms={foundFilms} foundGenres={foundGenres} searchType={searchType}/>
 
 
             </Router>

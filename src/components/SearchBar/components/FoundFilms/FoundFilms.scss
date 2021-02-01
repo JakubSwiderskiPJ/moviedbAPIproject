@@ -2,6 +2,7 @@
 
 .film-card {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   font-size: .8rem;
@@ -12,12 +13,26 @@
   }
 }
 
+.film-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.film-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
 .film-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 80vh;
 }
 
 .poster {
@@ -30,10 +45,11 @@
 
   border: 1px solid $supplement-light-color;
   border-radius: 20px;
+
+  margin-right: 1%;
 }
 
 .film-title {
-  height: 15%;
 
   a {
     color: $supplement-dark-color;
