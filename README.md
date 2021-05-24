@@ -1,8 +1,4 @@
-# Projekt XIV (50 pkt)
 
-## Napisz aplikację, która będzie serwisem zbierającym bazę filmów. Aplikacja powinna korzystać z API serwisu https://www.themoviedb.org (dostęp do dokumentacji API pod adresem https://www.themoviedb.org/documentation/api).
-
-### Aplikacja powinna spełniać następujące wymagania:
 
    - [x] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić panel do wyszukania filmów
    - [x] (1 pkt) Aplikacja na początkowej stronie powinno wyświetlić najbardziej popularne filmy w serwisie https://www.themoviedb.org
@@ -27,7 +23,7 @@
    - [ ] (2 pkt) W dodanych przez siebie filmach, aplikacja powinna mieć możliwość dodania oceny (poza serwisem https://www.themoviedb.org). Ocena ta powinny być widoczna w szczegółach dodanego filmu
    - [ ] (4 pkt) Aplikacja powinna zawierać panel administratora, dzięki któremu możemy dodawać/edytować/usuwać filmy oraz komentarze
    - [ ] (2 pkt) Aplikacja powinna wyświetlać statystyki dla danych filmów (w postaci tabeli na przykład najbardziej popularne, najbardziej popularny aktor). Im więcej statystyk tym większa liczba punktów
-### Pod ocenę będą brane następujące elementy:
+
 
   - [x] (1 pkt) Skompilowanie oraz uruchomienie projektu
   - [ ] (33 pkt) Uwzględnienie powyższych wymagań z uwzględnieniem sytuacji wyjątkowych
@@ -41,18 +37,11 @@
   - [ ] (2 pkt) Przetestowanie aplikacji
   - [x] (2 pkt) Styl i podział kodu
  
-### Dodatkowe punkty można otrzymać za wykonanie następujących podpunktów:
 
   -[ ] (1 pkt) Logowanie administratora
   -[ ] (1 pkt) Internationalizacja aplikacji
   -[ ] (1 pkt) Deploy aplikacji na serwer zewnętrzny (na przykład w serwisie Heroku/Netlify).
   -[x] (2 pkt) Inne rzeczy, nie pokazane na wykładzie/zajęciach. // React player
-
-### Ponadto pod ocenę jest brane również: (Brak tych elementów to ujemne punkty od obowiązkowej punktacji zadania!)
-
-   - [x] (0 pkt)Historia projektu w repozytorium.
-   - [x] (0 pkt)Ocenaopisu commitów
-   - [x] (0 pkt)Stan repozytorium (żeby nie był śmietnikiem!!!)
 
 
 # API 
