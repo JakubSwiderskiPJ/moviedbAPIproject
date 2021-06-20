@@ -25,10 +25,10 @@
    - [ ]  Aplikacja powinna wyświetlać statystyki dla danych filmów (w postaci tabeli na przykład najbardziej popularne, najbardziej popularny aktor)
  
 
-  -[ ] (1 pkt) Logowanie administratora
-  -[ ] (1 pkt) Internationalizacja aplikacji
-  -[ ] (1 pkt) Deploy aplikacji na serwer zewnętrzny (na przykład w serwisie Heroku/Netlify).
-  -[x] (2 pkt) Inne rzeczy. / React player
+  -[ ]  Logowanie administratora
+  -[ ]  Internationalizacja aplikacji
+  -[ ]  Deploy aplikacji na serwer zewnętrzny (na przykład w serwisie Heroku/Netlify).
+  -[x]  Inne rzeczy. / React player
 
 
 # API 
